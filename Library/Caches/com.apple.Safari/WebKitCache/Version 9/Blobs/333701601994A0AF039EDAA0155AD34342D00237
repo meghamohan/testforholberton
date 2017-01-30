@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Holberton School">
+    <link rel="icon" href="../../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>Holberton School's awesome intranet</title>
+
+	<link rel="stylesheet" media="all" href="/assets/application-db3812a3f2ca9d0bad785735e12c914d1cd84a76ea29dae954e190aef0d9dbcc.css" />
+	<script src="/assets/application-8fb7b8da8395b357f26c7097e76564a55eb64d6906cc9e5248a2da2e4907ce58.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.ico" />
+	<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="lS4fP6cejTtGZ9JqhZizcaEvbRGf3/SMsB29fNv3TdpR7/DNJfVX09vfrdR1KCVJRi7lybZ5NnmmsVK87TItUg==" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="signed_in">
+
+      <nav id="nav-left" class="hidden-xs title-font">
+        <a href="/">
+          <div id="holberton-logo">
+            <img alt="Holberton School" src="/assets/holberton-logo-simplified-d4e8a1e8bf5ad93c8c3ce32895b4b53749b477b7ba7342d7f064e6883bcd3be2.png" />
+          </div>
+</a>        <ul>
+            <li>
+    <a href="/dashboards/my_planning">
+        <div class="icon">
+          <i class="fa fa-calendar"></i>
+        </div>
+      My planning
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_current_projects">
+        <div class="icon">
+          <i class="fa fa-list"></i>
+        </div>
+      My projects
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_concepts">
+        <div class="icon">
+          <i class="fa fa-file-text"></i>
+        </div>
+      My concepts
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_batchmates">
+        <div class="icon">
+          <i class="fa fa-users"></i>
+        </div>
+      My batchmates
+</a>  </li>
+  <li>
+    <a href="/dashboards/corrections_i_can_make">
+        <div class="icon">
+          <i class="fa fa-check"></i>
+        </div>
+      QA reviews I can make
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_captain_log">
+        <div class="icon">
+          <i class="fa fa-book"></i>
+        </div>
+      My Captain's Logs
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_officers">
+        <div class="icon">
+          <i class="fa fa-building"></i>
+        </div>
+      My Officers
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_speakers_of_the_day">
+        <div class="icon">
+          <i class="fa fa-microphone"></i>
+        </div>
+      My Speakers of the day
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_server">
+        <div class="icon">
+          <i class="fa fa-server"></i>
+        </div>
+      My Servers
+</a>  </li>
+
+<li>
+  <a href="/users/my_profile">
+      <div class="icon">
+        <i class="fa fa-user"></i>
+      </div>
+    My profile
+</a></li>
+
+        </ul>
+      </nav>
+
+    <main>
+
+        <nav class="navbar navbar-default navbar-main visible-xs">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                  <img alt="Holberton School" src="/assets/holberton-logo-simplified-d4e8a1e8bf5ad93c8c3ce32895b4b53749b477b7ba7342d7f064e6883bcd3be2.png" />
+</a>            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li>
+    <a href="/dashboards/my_planning">
+      My planning
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_current_projects">
+      My projects
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_concepts">
+      My concepts
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_batchmates">
+      My batchmates
+</a>  </li>
+  <li>
+    <a href="/dashboards/corrections_i_can_make">
+      QA reviews I can make
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_captain_log">
+      My Captain's Logs
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_officers">
+      My Officers
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_speakers_of_the_day">
+      My Speakers of the day
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_server">
+      My Servers
+</a>  </li>
+
+<li>
+  <a href="/users/my_profile">
+    My profile
+</a></li>
+
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Megha Mohan <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a rel="nofollow" data-method="delete" href="/auth/sign_out">Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+
+
+      <article class="">
+          <div class="alert alert-info sm-gap">Your data was successfully updated.</div>
+
+        <h1>My profile</h1>
+
+<h2 class="gap">What you look like to other people:</h2>
+
+<ul class="list-group">
+	<li class="list-group-item user-preview clearfix" style="">
+	<div class="user-preview-photo">
+		<img src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/119/thumb/unnamed.jpg?1485807925" width="100" height="100">
+	</div>
+	<h3>
+
+		Megha Mohan
+
+
+	</h3>
+
+	<p>
+		<code>119</code>
+			<a class="user-preview-social" target="_blank" href="tel:4085055224">
+				<i class="fa fa-phone"></i>
+</a>		<a class="user-preview-social" target="_blank" href="mailto:megha.mohan@holbertonschool.com">
+			<i class="fa fa-envelope"></i>
+</a>			<span data-toggle="tooltip" data-placement="bottom" title="Username on Slack: meghamohan">
+				<i class="fa fa-slack"></i>
+			</span>
+	</p>
+	<p>
+			<a class="user-preview-social" target="_blank" href="https://twitter.com/meghamohan1989">
+				<i class="fa fa-twitter"></i>
+</a>			<a class="user-preview-social" target="_blank" href="https://github.com/meghamohan">
+				<i class="fa fa-github"></i>
+</a>			<a class="user-preview-social" target="_blank" href="https://medium.com/@meghamohan1989">
+				<i class="fa fa-medium"></i>
+</a>			<a class="user-preview-social" target="_blank" href="https://www.instagram.com/meghamohan/">
+				<i class="fa fa-instagram"></i>
+</a>	</p>
+
+</li>
+
+</ul>
+
+<h2 class="gap">Edit your profile</h2>
+
+<form class="form-horizontal gap" id="edit_user_119" enctype="multipart/form-data" action="/users/self_update" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="zxgqDxvPH8WLvtgRlfwnWKs9ukbMe+jxuw+9NK3Qwn4L2cX9mSTFLRYGp69lTLFgTDwynuXdKgSto1L0mxWi9g==" />
+
+	<div class="row" style="margin-bottom: 5px">
+		<div class="col-sm-10 col-sm-offset-2">
+				<img src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/119/thumb/unnamed.jpg?1485807925" width="100">
+		</div>
+	</div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label mandatory" for="user_photo">Photo</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="file" name="user[photo]" id="user_photo" />
+			<p class="help-block">Please upload a <strong>square-shaped</strong> picture.</p>
+		</div>
+	  </div>
+
+	  <hr>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label mandatory" for="user_first_name">First name</label>
+		<div class="col-sm-10">
+			<input class="form-control" type="text" value="Megha" name="user[first_name]" id="user_first_name" />
+			<p class="help-block">Your <strong>legal</strong> first name.</p>
+		</div>
+	</div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_middle_names">Middle name(s)</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[middle_names]" id="user_middle_names" />
+			<p class="help-block">Your legal middle names (other people won't see that).</p>
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_preferred_name">Preferred name</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[preferred_name]" id="user_preferred_name" />
+			<p class="help-block">The first name you prefer people to use (defaults to your legal first name if left empty).</p>
+		</div>
+	  </div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label mandatory" for="user_last_name">Last name</label>
+		<div class="col-sm-10">
+			<input class="form-control" type="text" value="Mohan" name="user[last_name]" id="user_last_name" />
+			<p class="help-block">Your legal last name (other people will see that).</p>
+		</div>
+	</div>
+
+
+		<hr>
+
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label" for="user_current_address">Current address</label>
+			<div class="col-sm-10">
+			    <input class="form-control" type="text" value="" name="user[current_address]" id="user_current_address" />
+				<p class="help-block">Not where you're from, but the address or residence you live at in order to attend Holberton School. Please keep up to date if you move. Other people won't see that.</p>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label mandatory" for="user_phone_number">Phone number</label>
+			<div class="col-sm-10">
+			    <input class="form-control" type="text" value="4085055224" name="user[phone_number]" id="user_phone_number" />
+		    </div>
+		  </div>
+
+			  <div class="form-group">
+			    <label class="col-sm-2 control-label mandatory" for="user_immutable_username">Holberton username</label>
+				<div class="col-sm-10">
+				    <input class="form-control" type="text" value="" name="user[immutable_username]" id="user_immutable_username" />
+					<p class="help-block">Choose wisely, as <strong>you won't be able to change it later</strong>. This will be used to generate your email address. We strongly suggest that you make it be <em>first_name.last_name</em>, for instance: <em>rudy.rigot</em>.</p>
+			    </div>
+			  </div>
+
+		<hr class="gap">
+
+	  <div class="form-group gap">
+	    <label class="col-sm-2 control-label" for="user_ssh_public_key">SSH public key</label>
+			<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[ssh_public_key]" id="user_ssh_public_key" />
+	    </div>
+	  </div>
+
+	  <div class="form-group gap">
+	    <label class="col-sm-2 control-label" for="user_project_website_url">Project website url</label>
+			<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[project_website_url]" id="user_project_website_url" />
+	    </div>
+	  </div>
+
+	  <hr class="gap">
+
+	  <h2 class="gap">Social presence</h2>
+
+		  <p class="sm-gap">Before you start at Holberton School, you need to have all of these accounts created and ready to be used. If you're not familiar with all of them, it is a good idea to familiarize yourself before your start date.</p>
+
+
+	  <div class="form-group gap">
+	    <label class="col-sm-2 control-label" for="user_slack_username">Slack username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="meghamohan" name="user[slack_username]" id="user_slack_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_forum_username">Forum username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[forum_username]" id="user_forum_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_linkedin_url">LinkedIn URL</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[linkedin_url]" id="user_linkedin_url" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label mandatory" for="user_twitter_username">Twitter username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="meghamohan1989" name="user[twitter_username]" id="user_twitter_username" />
+				<p class="help-block">Also, please create a Medium account from your Twitter account if you never have (so you can write stories).</p>
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label mandatory" for="user_github_username">Github username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="meghamohan" name="user[github_username]" id="user_github_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_stackoverflow_url">StackOverflow URL</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[stackoverflow_url]" id="user_stackoverflow_url" />
+	    </div>
+	  </div>
+
+		<div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_stackoverflow_id">StackOverflow ID</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[stackoverflow_id]" id="user_stackoverflow_id" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_quora_url">Quora URL</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[quora_url]" id="user_quora_url" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_hackernews_username">Hackernews username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[hackernews_username]" id="user_hackernews_username" />
+				<p class="help-block">Also, subscribe to the <a target="blank" href="http://www.hndigest.com">HN Digest</a> newsletter.</p>
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_instagram_username">Instagram username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="meghamohan" name="user[instagram_username]" id="user_instagram_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_reddit_username">Reddit username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[reddit_username]" id="user_reddit_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_meetup_url">Meetup URL</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[meetup_url]" id="user_meetup_url" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_slideshare_username">Slideshare username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[slideshare_username]" id="user_slideshare_username" />
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="user_disqus_username">Disqus username</label>
+		<div class="col-sm-10">
+		    <input class="form-control" type="text" value="" name="user[disqus_username]" id="user_disqus_username" />
+	    </div>
+	  </div>
+
+	<div class="form-group gap">
+		<div class="col-sm-offset-2 col-sm-10">
+			<input type="submit" name="commit" value="Save my information" class="btn btn-primary" />
+		</div>
+	</div>
+
+</form>
+
+<p class="text-right">
+	<a class="btn btn-default" rel="nofollow" data-method="delete" href="/auth/sign_out">
+		 <span class="glyphicon glyphicon-off"></span>
+		 Log out
+</a></p>
+
+      </article>
+
+    </main>
+
+
+
+
+
+    
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67152800-6', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<key>4D534945•WWWHomePage</key>
+			<dict>
+				<key>ic-data</key>
+				<data>
+				2016-10-01 19:48:26.523 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+2016-10-01 19:48:26.523 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+2016-10-01 19:48:26.524 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+2016-10-01 19:48:26.524 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+2016-10-01 19:48:26.742 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+2016-10-01 19:48:26.743 osascript[400:2871] CFPasteboardRef CFPasteboardCreate(CFAllocatorRef, CFStringRef) : failed to create global data
+H2h0dHBzOi8vd3d3LmhvbGJlcnRvbnNjaG9vbC5jb20=
+				</data>
+			

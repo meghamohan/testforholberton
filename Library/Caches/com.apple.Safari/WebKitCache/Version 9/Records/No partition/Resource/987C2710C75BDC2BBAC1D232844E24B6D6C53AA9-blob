@@ -1,0 +1,3094 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+
+<head>
+
+<title>github - How can I determine the URL that a local Git repository was originally cloned from? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com"/>
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How can I determine the URL that a local Git repository was originally cloned from?" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I pulled a project from GitHub a few days ago. I&#39;ve since discovered that there are several forks on GitHub, and I neglected to note which one I took originally. How can I determine which of those ..." />
+    <meta property="og:url" content="http://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr"/>
+    <link rel="canonical" href="http://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" />
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=b3efb0502b6f"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/all.css?v=15c902bc598b">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How can I determine the URL that a local Git repository was originally cloned from?&#39;" href="/feeds/question/4089430">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:3,shownCommentCount:3,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:4089430});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '4089430');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1485809529,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"b86778ba6f6b37300e8f6c6956415f43","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":2},"devstory_onboarding_exp":{"v":"h","g":2}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableNewHeaderDesignForLowRepUsers":true,"enableImgurHttps":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"4e8db32e0b76","js/moderator.en.js":"65ef1aa82c7d","js/full-anon.en.js":"6bc64bdd8954","js/full.en.js":"673247676eed","js/wmd.en.js":"f253eb997331","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"371c80026b94","js/help.en.js":"41e2b9d43396","js/tageditor.en.js":"9c6df10dabc4","js/tageditornew.en.js":"3f8d2b6c9ba9","js/inline-tag-editing.en.js":"aed50ef10aca","js/revisions.en.js":"47de10a8358f","js/review.en.js":"8ac5cd81ba91","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"fd6878dd10b2","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"8a7293cedd88","js/keyboard-shortcuts.en.js":"354ddfdd589f","js/external-editor.en.js":"dec8b7cab79e","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"dec8b7cab79e","js/snippet-javascript.en.js":"bb9cbf50086e","js/snippet-javascript-codemirror.en.js":"864efc04d1ae"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        <iframe id="adzerk-user-match" width="0" height="0" frameborder="0" scrolling="no" onload="window.AUMIframeDone=true"
+                src="https://ssum-sec.casalemedia.com/usermatch?s=183712&amp;cb=https%3A%2F%2Fengine.adzerk.net%2Fudb%2F22%2Fsync%2Fi.gif%3FpartnerId%3D1%26userId%3D"
+                style="display: none;" marginheight="0" marginwidth="0"></iframe>
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="//stackoverflow.com">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+
+
+
+    <a href="//stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4089430%2fhow-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="//stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="//stackexchange.com"
+                   class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+                   data-gps-track="site_switcher.show"
+                   title="A list of all 163 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="#"
+       class="topbar-icon icon-inbox yes-hover js-inbox-button"
+       title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#"
+       class="topbar-icon icon-achievements yes-hover js-achievements-button "
+       data-unread-class=""
+       title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link" rel="nofollow">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4089430%2fhow-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" class="login-link" rel="nofollow">log in</a>
+
+                            <a href="/tour">tour</a>
+        <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="//meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                        <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions"
+           href="/questions"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs"
+           href="/jobs?med=site-ui&amp;ref=jobs-tab"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs"
+           href="/documentation"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags"
+           href="/tags"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users"
+           href="/users"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges"
+           href="/help/badges"
+           class="js-gps-track" 
+           data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+    <div id="herobox" class="alternate">
+        <div class="test"></div>
+            <div id="close">
+                <a title="click to minimize"><span>x</span> Dismiss</a>
+            </div>
+        <div class="content">
+            <b>Join the Stack Overflow Community</b>
+            <div class="separator"></div>
+            <div class="blurb">
+                Stack Overflow is a community of 6.6 million programmers, just like you, helping each other.
+                    <br />
+Join them; it only takes a minute:                    <br />
+            </div>
+            <a href="/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4089430%2fhow-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" id="tell-me-more" class="button">Sign up</a>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr" class="question-hyperlink">How can I determine the URL that a local Git repository was originally cloned from?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="4089430"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1921767553",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1921767553"></div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4089430">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post high-scored-post">1731</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#">favorite</a>
+        <div class="favoritecount"><b>403</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I pulled a project from GitHub a few days ago. I've since discovered that there are several forks on GitHub, and I neglected to note which one I took originally. How can I determine which of those forks I pulled?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/git" class="post-tag" title="show questions tagged &#39;git&#39;" rel="tag">git</a> <a href="/questions/tagged/github" class="post-tag" title="show questions tagged &#39;github&#39;" rel="tag"><img src="//i.stack.imgur.com/eoNf5.png" height="16" width="18" alt="" class="sponsor-tag-img">github</a> <a href="/questions/tagged/git-remote" class="post-tag" title="show questions tagged &#39;git-remote&#39;" rel="tag">git-remote</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/4089430" title="short permalink to this question" class="short-link" id="link-post-4089430">share</a><span class="lsep">|</span><a href="/posts/4089430/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/4089430/revisions" title="show all edits to this post">edited <span title="2015-11-01 10:24:41Z" class="relativetime">Nov 1 '15 at 10:24</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/63550/peter-mortensen"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/RIZKi.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/63550/peter-mortensen">Peter Mortensen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 10,680" dir="ltr">10.7k</span><span title="13 gold badges"><span class="badge1"></span><span class="badgecount">13</span></span><span title="73 silver badges"><span class="badge2"></span><span class="badgecount">73</span></span><span title="108 bronze badges"><span class="badge3"></span><span class="badgecount">108</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2010-11-03 16:47:46Z" class="relativetime">Nov 3 '10 at 16:47</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/18088/tim"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/085e31f3e25755cd71456780023ade87?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/18088/tim">Tim</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">8,884</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="13 silver badges"><span class="badge2"></span><span class="badgecount">13</span></span><span title="17 bronze badges"><span class="badge3"></span><span class="badgecount">17</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4089430" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-53808069" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">13</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">With git 2.7 (Q4 2015), <code>git rmeote get-url origin</code> will be possible. See <a href="http://stackoverflow.com/a/32991784/6309">my answer below</a></span>
+                    &ndash;&nbsp;<a href="/users/6309/vonc"
+                       title="653,872 reputation"
+                       class="comment-user">VonC</a>
+                <span class="comment-date" dir="ltr"><span title="2015-10-07 12:08:41Z" class="relativetime-clean">Oct 7 '15 at 12:08</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-58947638" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">26</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I&#39;m sure you meant <code>git remote get-url origin</code>.</span>
+                    &ndash;&nbsp;<a href="/users/3708977/shiri"
+                       title="422 reputation"
+                       class="comment-user">shiri</a>
+                <span class="comment-date" dir="ltr"><span title="2016-02-25 16:33:05Z" class="relativetime-clean">Feb 25 '16 at 16:33</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-70672893" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><a href="http://codingaffairs.blogspot.com/2017/01/configure-setup-git-remote-repository.html" rel="nofollow noreferrer">codingaffairs.blogspot.com/2017/01/&hellip;</a></span>
+                    &ndash;&nbsp;<a href="/users/4578513/hammad-tariq"
+                       title="1,005 reputation"
+                       class="comment-user">Hammad Tariq</a>
+                <span class="comment-date" dir="ltr"><span title="2017-01-19 10:55:24Z" class="relativetime-clean">Jan 19 at 10:55</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4089430" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								13 Answers
+                                <span style="display:none;" itemprop="answerCount">13</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="4089452"></a>
+<div id="answer-4089452" class="answer accepted-answer" data-answerid="4089452"  itemscope itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4089452">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post high-scored-post">2493</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If referential integrity has been broken:</p>
+
+<pre><code>git config --get remote.origin.url
+</code></pre>
+
+<p>If referential integrity is intact:</p>
+
+<pre><code>git remote show origin
+</code></pre>
+
+<p>When using <code>git clone</code> (from GitHub, or any source repository for that matter) the default name for the source of the clone is "origin". Using <code>git remote show</code> will display the information about this remote name. The first few lines should show:</p>
+
+<pre><code>C:\Users\jaredpar\VsVim&gt; git remote show origin
+* remote origin
+  Fetch URL: git@github.com:jaredpar/VsVim.git
+  Push  URL: git@github.com:jaredpar/VsVim.git
+  HEAD branch: master
+  Remote branches:
+</code></pre>
+
+<p>If you want to use the value in the script, you would use the first command listed in this answer.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/4089452" title="short permalink to this answer" class="short-link" id="link-post-4089452">share</a><span class="lsep">|</span><a href="/posts/4089452/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/4089452/revisions" title="show all edits to this post">edited <span title="2015-11-01 10:25:48Z" class="relativetime">Nov 1 '15 at 10:25</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/63550/peter-mortensen"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/RIZKi.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/63550/peter-mortensen">Peter Mortensen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 10,680" dir="ltr">10.7k</span><span title="13 gold badges"><span class="badge1"></span><span class="badgecount">13</span></span><span title="73 silver badges"><span class="badge2"></span><span class="badgecount">73</span></span><span title="108 bronze badges"><span class="badge3"></span><span class="badgecount">108</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-11-03 16:50:16Z" class="relativetime">Nov 3 '10 at 16:50</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/23283/jaredpar"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/529ba429a58902bef56c2fcb672d5ccb?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/23283/jaredpar">JaredPar</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 467,653" dir="ltr">468k</span><span title="88 gold badges"><span class="badge1"></span><span class="badgecount">88</span></span><span title="942 silver badges"><span class="badge2"></span><span class="badgecount">942</span></span><span title="1252 bronze badges"><span class="badge3"></span><span class="badgecount">1252</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4089452" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="3"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-12676048" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Use git config as described below instead if using jgit with amazon-s3.</span>
+                    &ndash;&nbsp;<a href="/users/468315/barryku"
+                       title="919 reputation"
+                       class="comment-user">barryku</a>
+                <span class="comment-date" dir="ltr"><span title="2012-03-29 17:20:40Z" class="relativetime-clean">Mar 29 '12 at 17:20</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-38751252" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Although not relevant to the purpose of the original question, please note that if attempting to get the &quot;Push URL&quot; and multiple URLs are entered for the remote specified, you&#39;ll either need to use <code>git remote show origin</code> (optionally with the -n flag provided by @Casey), or with <code>git remote -v</code> as suggested by @Montaro and @rodel.</span>
+                    &ndash;&nbsp;<a href="/users/1385230/amazingant"
+                       title="171 reputation"
+                       class="comment-user">Amazingant</a>
+                <span class="comment-date" dir="ltr"><span title="2014-07-24 14:39:40Z" class="relativetime-clean">Jul 24 '14 at 14:39</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-43138231" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@ayjay <code>&#180;~&#47;.gitconfig</code> is global to all <code>git</code> repositories, this here comes from the local config which usually is in <code>.git&#47;config</code> (however for git-submodules the answer is a bit more difficult).  Note that <code>strace git config --get remote.origin.url</code> is your friend.</span>
+                    &ndash;&nbsp;<a href="/users/490291/tino"
+                       title="1,732 reputation"
+                       class="comment-user">Tino</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-07 09:10:04Z" class="relativetime-clean">Dec 7 '14 at 9:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-50831993" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">What does &quot;if referential integrity has been broken&quot; mean? There is a comment to another answer mention a case where the remote URL is &quot;not available anymore&quot;: is this it? where &quot;not available&quot; meaning &quot;not reachable&quot;??</span>
+                    &ndash;&nbsp;<a href="/users/42973/eol"
+                       title="41,378 reputation"
+                       class="comment-user">EOL</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-15 12:49:12Z" class="relativetime-clean">Jul 15 '15 at 12:49</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-57909502" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@JaredPar What do you mean by referential integrity?</span>
+                    &ndash;&nbsp;<a href="/users/2809294/akshayraj-kore"
+                       title="721 reputation"
+                       class="comment-user">Akshayraj Kore</a>
+                <span class="comment-date" dir="ltr"><span title="2016-01-29 20:53:24Z" class="relativetime-clean">Jan 29 '16 at 20:53</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4089452" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>3</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1111906800",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1111906800"></div>
+  
+<a name="4090938"></a>
+<div id="answer-4090938" class="answer" data-answerid="4090938"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4090938">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">388</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Should you want this for scripting purposes, you can get only the URL with</p>
+
+<pre><code>git config --get remote.origin.url
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/4090938" title="short permalink to this answer" class="short-link" id="link-post-4090938">share</a><span class="lsep">|</span><a href="/posts/4090938/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/4090938/revisions" title="show all edits to this post">edited <span title="2015-02-17 19:34:10Z" class="relativetime">Feb 17 '15 at 19:34</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/128421/the-tin-man"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/71770d043c0f7e3c7bc5f74190015c26?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/128421/the-tin-man">the Tin Man</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 113,806" dir="ltr">114k</span><span title="22 gold badges"><span class="badge1"></span><span class="badgecount">22</span></span><span title="142 silver badges"><span class="badge2"></span><span class="badgecount">142</span></span><span title="211 bronze badges"><span class="badge3"></span><span class="badgecount">211</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-11-03 19:35:43Z" class="relativetime">Nov 3 '10 at 19:35</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/119963/jefromi"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/tBCc0.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/119963/jefromi">Jefromi</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 240,060" dir="ltr">240k</span><span title="43 gold badges"><span class="badge1"></span><span class="badgecount">43</span></span><span title="285 silver badges"><span class="badge2"></span><span class="badgecount">285</span></span><span title="271 bronze badges"><span class="badge3"></span><span class="badgecount">271</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4090938" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-22092231" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is. Way faster than the solution above.</span>
+                    &ndash;&nbsp;<a href="/users/158584/k-ran"
+                       title="474 reputation"
+                       class="comment-user">K-RAN</a>
+                <span class="comment-date" dir="ltr"><span title="2013-03-23 02:10:11Z" class="relativetime-clean">Mar 23 '13 at 2:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-24011526" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">19</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is the correct answer. It is way faster and it even works, if the remote url is not available anymore (<code>git remote show origin</code> just shows &quot;conq: repository does not exist.&quot;).</span>
+                    &ndash;&nbsp;<a href="/users/900033/apfelbox"
+                       title="1,652 reputation"
+                       class="comment-user">apfelbox</a>
+                <span class="comment-date" dir="ltr"><span title="2013-05-22 06:58:10Z" class="relativetime-clean">May 22 '13 at 6:58</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-24352374" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is not quite the right answer because of the config option <code>url.&lt;base&gt;.insteadOf</code>. See my answer - git has a command for this purpose.</span>
+                    &ndash;&nbsp;<a href="/users/759418/arcresu"
+                       title="2,925 reputation"
+                       class="comment-user">arcresu</a>
+                <span class="comment-date" dir="ltr"><span title="2013-06-02 05:17:08Z" class="relativetime-clean">Jun 2 '13 at 5:17</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-24352805" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@arcresu Cool, +1 to you! In my defense, that command wasn&#39;t added until March 2011, and it wasn&#39;t documented until September 2012.</span>
+                    &ndash;&nbsp;<a href="/users/119963/jefromi"
+                       title="240,060 reputation"
+                       class="comment-user">Jefromi</a>
+                <span class="comment-date" dir="ltr"><span title="2013-06-02 06:03:07Z" class="relativetime-clean">Jun 2 '13 at 6:03</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-34352996" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Doesn&#39;t seem to work with --git-dir or --work-tree</span>
+                    &ndash;&nbsp;<a href="/users/106797/catskul"
+                       title="6,211 reputation"
+                       class="comment-user">Catskul</a>
+                <span class="comment-date" dir="ltr"><span title="2014-03-21 20:25:01Z" class="relativetime-clean">Mar 21 '14 at 20:25</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4090938" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="9053008"></a>
+<div id="answer-9053008" class="answer" data-answerid="9053008"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="9053008">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">269</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can try:</p>
+
+<pre><code>git remote -v
+</code></pre>
+
+<p>It will print all your remotes' fetch/push URLs.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/9053008" title="short permalink to this answer" class="short-link" id="link-post-9053008">share</a><span class="lsep">|</span><a href="/posts/9053008/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/9053008/revisions" title="show all edits to this post">edited <span title="2015-02-24 04:19:43Z" class="relativetime">Feb 24 '15 at 4:19</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-01-29 12:01:29Z" class="relativetime">Jan 29 '12 at 12:01</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/348162/montaro"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/681843573f794800a9a19b0957b37c98?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/348162/montaro">Montaro</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">3,285</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="16 silver badges"><span class="badge2"></span><span class="badgecount">16</span></span><span title="25 bronze badges"><span class="badge3"></span><span class="badgecount">25</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-9053008" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-9053008" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="16880000"></a>
+<div id="answer-16880000" class="answer" data-answerid="16880000"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="16880000">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">151</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+<div class="bounty-award-container"><span class="bounty-award" title="This answer has been awarded bounties worth 100 reputation by Jefromi">+100</span></div>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>To get the answer:</p>
+
+<pre><code>git ls-remote --get-url [REMOTE]
+</code></pre>
+
+<p>This is better than reading the config; refer to the <a href="http://git-scm.com/docs/git-ls-remote.html">man page for <code>git-ls-remote</code></a>:</p>
+
+<blockquote>
+  <p><strong>--get-url</strong></p>
+  
+  <p>Expand the URL of the given remote repository taking into account
+  any <code>"url.&lt;base&gt;.insteadOf"</code> config setting (See <code>git-config(1)</code>) and
+  exit without talking to the remote.</p>
+</blockquote>
+
+<p>As pointed out by @Jefromi, this option was added in <a href="https://github.com/git/git/commit/45781adb9a89c0c47f61ccf8062be26b86a38a54">v1.7.5</a> and not documented until <a href="https://github.com/git/git/commit/2303cad242a6ccc4745d7994ecc0425bd8513a0d">v1.7.12.2</a>.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/16880000" title="short permalink to this answer" class="short-link" id="link-post-16880000">share</a><span class="lsep">|</span><a href="/posts/16880000/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/16880000/revisions" title="show all edits to this post">edited <span title="2013-06-05 02:40:10Z" class="relativetime">Jun 5 '13 at 2:40</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-06-02 05:15:59Z" class="relativetime">Jun 2 '13 at 5:15</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/759418/arcresu"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fb7b59786d426620fe28ee49c447284a?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/759418/arcresu">arcresu</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,925</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="13 silver badges"><span class="badge2"></span><span class="badgecount">13</span></span><span title="32 bronze badges"><span class="badge3"></span><span class="badgecount">32</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16880000" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-50933426" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">good one : this also would provide the same for previous versions      &gt; git remote -v| grep fetch|awk &#39;{print $2}&#39;</span>
+                    &ndash;&nbsp;<a href="/users/1691387/ravi-zombie"
+                       title="657 reputation"
+                       class="comment-user">ravi.zombie</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-17 20:26:41Z" class="relativetime-clean">Jul 17 '15 at 20:26</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-16880000" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="23682620"></a>
+<div id="answer-23682620" class="answer" data-answerid="23682620"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="23682620">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">27</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>To summarize, there are at least four ways:</p>
+
+<p>(The following was tried for the official Linux repository)</p>
+
+<p><strong>Least information:</strong></p>
+
+<pre><code>$ git config --get remote.origin.url
+https://github.com/torvalds/linux.git
+</code></pre>
+
+<p>and</p>
+
+<pre><code>$ git ls-remote --get-url
+https://github.com/torvalds/linux.git
+</code></pre>
+
+<p><strong>More information:</strong></p>
+
+<pre><code>$ git remote -v
+origin    https://github.com/torvalds/linux.git (fetch)
+origin    https://github.com/torvalds/linux.git (push)
+</code></pre>
+
+<p><strong>Even more information:</strong></p>
+
+<pre><code>$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/torvalds/linux.git
+  Push  URL: https://github.com/torvalds/linux.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/23682620" title="short permalink to this answer" class="short-link" id="link-post-23682620">share</a><span class="lsep">|</span><a href="/posts/23682620/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/23682620/revisions" title="show all edits to this post">edited <span title="2015-11-01 10:28:17Z" class="relativetime">Nov 1 '15 at 10:28</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/63550/peter-mortensen"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/RIZKi.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/63550/peter-mortensen">Peter Mortensen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 10,680" dir="ltr">10.7k</span><span title="13 gold badges"><span class="badge1"></span><span class="badgecount">13</span></span><span title="73 silver badges"><span class="badge2"></span><span class="badgecount">73</span></span><span title="108 bronze badges"><span class="badge3"></span><span class="badgecount">108</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-05-15 15:28:53Z" class="relativetime">May 15 '14 at 15:28</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/325418/%e5%a4%aa%e6%a5%b5%e8%80%85%e7%84%a1%e6%a5%b5%e8%80%8c%e7%94%9f"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/eb71c362ddeda80c2668d2575e97bc70?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/325418/%e5%a4%aa%e6%a5%b5%e8%80%85%e7%84%a1%e6%a5%b5%e8%80%8c%e7%94%9f">太極者無極而生</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 53,021" dir="ltr">53k</span><span title="76 gold badges"><span class="badge1"></span><span class="badgecount">76</span></span><span title="315 silver badges"><span class="badge2"></span><span class="badgecount">315</span></span><span title="557 bronze badges"><span class="badge3"></span><span class="badgecount">557</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23682620" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-43138417" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Note <code>git config --get remote.origin.url</code> retrieves the original URL which was set with <code>git remote add ...</code> or <code>git remote set-url ...</code> while <code>git ls-remote --get-url origin</code> retrieves the URL which is actually used to access the remote - which might be different in presence of <code>git config --global url.XXX.insteadOf YYY</code>.  <b>So both outputs may differ!</b>  Also note that <code>git ls-remote --get-url</code> (without <code>origin</code>) does not neccessarily retrieve <code>origin</code>, instead it shows the tracked upstream, so it will fail for example in detached HEAD state.</span>
+                    &ndash;&nbsp;<a href="/users/490291/tino"
+                       title="1,732 reputation"
+                       class="comment-user">Tino</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-07 09:27:02Z" class="relativetime-clean">Dec 7 '14 at 9:27</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23682620" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="32991784"></a>
+<div id="answer-32991784" class="answer" data-answerid="32991784"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="32991784">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">21</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>With Git 2.7 (release January 5th, 2015), you have a more coherent solution using <code>git remote</code>:</p>
+
+<pre><code>git remote get-url origin
+</code></pre>
+
+<p>(nice pendant of <code>git remote set-url origin &lt;newurl&gt;</code>)</p>
+
+<p>See <a href="https://github.com/git/git/commit/96f78d39989d1fcf393d7bc42357467dd8cf0f15">commit 96f78d3</a> (16 Sep 2015) by <a href="https://github.com/mathstuf">Ben Boeckel (<code>mathstuf</code>)</a>.<br>
+<sup>(Merged by <a href="https://github.com/gitster">Junio C Hamano -- <code>gitster</code> --</a> in <a href="https://github.com/git/git/commit/e437cbd01564f0c31fad068fa1f88feea5d806da">commit e437cbd</a>, 05 Oct 2015)</sup>:</p>
+
+<blockquote>
+  <h1>remote: add get-url subcommand</h1>
+  
+  <p>Expanding <code>insteadOf</code> is a part of <code>ls-remote --url</code> and there is no way
+  to expand <code>pushInsteadOf</code> as well.<br>
+  Add a <code>get-url</code> subcommand to be able to query both as well as a way to get all configured URLs.</p>
+</blockquote>
+
+<pre><code>get-url:
+</code></pre>
+
+<blockquote>
+  <p>Retrieves the URLs for a remote.<br>
+  Configurations for <code>insteadOf</code> and <code>pushInsteadOf</code> are expanded here.<br>
+  By default, only the first URL is listed.</p>
+  
+  <ul>
+  <li>With '<code>--push</code>', push URLs are queried rather than fetch URLs.</li>
+  <li>With '<code>--all</code>', all URLs for the remote will be listed.</li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<p>Before git 2.7, you had:</p>
+
+<pre><code> git config --get remote.[REMOTE].url
+ git ls-remote --get-url [REMOTE]
+ git remote show [REMOTE]
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/32991784" title="short permalink to this answer" class="short-link" id="link-post-32991784">share</a><span class="lsep">|</span><a href="/posts/32991784/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/32991784/revisions" title="show all edits to this post">edited <span title="2016-01-05 08:03:18Z" class="relativetime">Jan 5 '16 at 8:03</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2015-10-07 12:07:58Z" class="relativetime">Oct 7 '15 at 12:07</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/6309/vonc"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/7aa22372b695ed2b26052c340f9097eb?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/6309/vonc">VonC</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 653,872" dir="ltr">654k</span><span title="206 gold badges"><span class="badge1"></span><span class="badgecount">206</span></span><span title="1894 silver badges"><span class="badge2"></span><span class="badgecount">1894</span></span><span title="2015 bronze badges"><span class="badge3"></span><span class="badgecount">2015</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-32991784" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-56266087" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">After 5 years a lot has changed and this should be the accepted answer now. But maybe add the pre-2.7 syntax as well.</span>
+                    &ndash;&nbsp;<a href="/users/184792/msparer"
+                       title="1,692 reputation"
+                       class="comment-user">msparer</a>
+                <span class="comment-date" dir="ltr"><span title="2015-12-14 08:17:58Z" class="relativetime-clean">Dec 14 '15 at 8:17</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-56958826" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@msparer I have updated the answer.</span>
+                    &ndash;&nbsp;<a href="/users/6309/vonc"
+                       title="653,872 reputation"
+                       class="comment-user">VonC</a>
+                <span class="comment-date" dir="ltr"><span title="2016-01-05 08:03:33Z" class="relativetime-clean">Jan 5 '16 at 8:03</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-32991784" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="15119232"></a>
+<div id="answer-15119232" class="answer" data-answerid="15119232"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="15119232">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">12</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Short answer:</p>
+
+<pre><code>$ git remote show -n origin
+</code></pre>
+
+<p>or, an alternative for pure quick scripts:</p>
+
+<pre><code>$ git config --get remote.origin.url
+</code></pre>
+
+<p>Some info:</p>
+
+<ol>
+<li><code>$ git remote -v</code> will print all remotes (not what you want). You want origin right?</li>
+<li><code>$ git remote show origin</code> much better, shows only <code>origin</code> but takes too long (tested on git version 1.8.1.msysgit.1).</li>
+</ol>
+
+<p>I ended up with: <code>$ git remote show -n origin</code>, which  seems to be fastest. With <code>-n</code> it will not fetch remote heads (AKA branches). You don't need that type of info, right?</p>
+
+<p><a href="http://www.kernel.org/pub//software/scm/git/docs/git-remote.html">http://www.kernel.org/pub//software/scm/git/docs/git-remote.html</a></p>
+
+<p>You can apply <code>| grep -i fetch</code> to all three versions to show only the fetch URL.</p>
+
+<p>If you require pure speed, then use:</p>
+
+<pre><code>$ git config --get remote.origin.url
+</code></pre>
+
+<p>Thanks to <a href="http://stackoverflow.com/a/4090938/2098832">@Jefromi</a> for pointing that out.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/15119232" title="short permalink to this answer" class="short-link" id="link-post-15119232">share</a><span class="lsep">|</span><a href="/posts/15119232/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/15119232/revisions" title="show all edits to this post">edited <span title="2013-03-19 23:15:46Z" class="relativetime">Mar 19 '13 at 23:15</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/128421/the-tin-man"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/71770d043c0f7e3c7bc5f74190015c26?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/128421/the-tin-man">the Tin Man</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 113,806" dir="ltr">114k</span><span title="22 gold badges"><span class="badge1"></span><span class="badgecount">22</span></span><span title="142 silver badges"><span class="badge2"></span><span class="badgecount">142</span></span><span title="211 bronze badges"><span class="badge3"></span><span class="badgecount">211</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-02-27 18:11:45Z" class="relativetime">Feb 27 '13 at 18:11</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2098832/casey"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/a0MHy.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2098832/casey">Casey</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">801</span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="13 bronze badges"><span class="badge3"></span><span class="badgecount">13</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-15119232" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-15119232" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="4089454"></a>
+<div id="answer-4089454" class="answer" data-answerid="4089454"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4089454">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">8</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I think you can find it under <code>.git/config</code> and <code>remote["origin"]</code> if you didn't manipulate that.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/4089454" title="short permalink to this answer" class="short-link" id="link-post-4089454">share</a><span class="lsep">|</span><a href="/posts/4089454/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-11-03 16:50:48Z" class="relativetime">Nov 3 '10 at 16:50</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/145190/meder-omuraliev"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/AueYj.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/145190/meder-omuraliev">meder omuraliev</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 112,720" dir="ltr">113k</span><span title="43 gold badges"><span class="badge1"></span><span class="badgecount">43</span></span><span title="299 silver badges"><span class="badge2"></span><span class="badgecount">299</span></span><span title="386 bronze badges"><span class="badge3"></span><span class="badgecount">386</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4089454" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4089454" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="14430735"></a>
+<div id="answer-14430735" class="answer" data-answerid="14430735"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="14430735">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Print arbitrarily named remote fetch URLs:</p>
+
+<pre><code>git remote -v | grep fetch | awk '{print $2}'
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/14430735" title="short permalink to this answer" class="short-link" id="link-post-14430735">share</a><span class="lsep">|</span><a href="/posts/14430735/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/14430735/revisions" title="show all edits to this post">edited <span title="2015-09-01 14:34:45Z" class="relativetime">Sep 1 '15 at 14:34</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-01-20 23:51:59Z" class="relativetime">Jan 20 '13 at 23:51</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1050426/aron"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/24c2c85b3894f23c189188b18f4a86f9?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1050426/aron">Aron</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">41</span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-14430735" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-50933328" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">good one Can reduce it to       git remote -v| grep fetch|awk &#39;{print $2}&#39;</span>
+                    &ndash;&nbsp;<a href="/users/1691387/ravi-zombie"
+                       title="657 reputation"
+                       class="comment-user">ravi.zombie</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-17 20:23:30Z" class="relativetime-clean">Jul 17 '15 at 20:23</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-14430735" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="24396083"></a>
+<div id="answer-24396083" class="answer" data-answerid="24396083"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="24396083">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<h3>To get the IP address/hostname of <code>origin</code></h3>
+
+<p>For <code>ssh://</code> repositories:</p>
+
+<pre><code>git ls-remote --get-url origin | cut -f 2 -d @ | cut -f 1 -d "/"
+</code></pre>
+
+<p>For <code>git://</code> repositories:</p>
+
+<pre><code>git ls-remote --get-url origin | cut -f 2 -d @ | cut -f 1 -d ":"
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/24396083" title="short permalink to this answer" class="short-link" id="link-post-24396083">share</a><span class="lsep">|</span><a href="/posts/24396083/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/24396083/revisions" title="show all edits to this post">edited <span title="2015-11-01 10:29:03Z" class="relativetime">Nov 1 '15 at 10:29</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/63550/peter-mortensen"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/RIZKi.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/63550/peter-mortensen">Peter Mortensen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 10,680" dir="ltr">10.7k</span><span title="13 gold badges"><span class="badge1"></span><span class="badgecount">13</span></span><span title="73 silver badges"><span class="badge2"></span><span class="badgecount">73</span></span><span title="108 bronze badges"><span class="badge3"></span><span class="badgecount">108</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-06-24 20:54:22Z" class="relativetime">Jun 24 '14 at 20:54</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/558721/stephen"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/m6UzX.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/558721/stephen">Stephen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">4,024</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="27 silver badges"><span class="badge2"></span><span class="badgecount">27</span></span><span title="52 bronze badges"><span class="badge3"></span><span class="badgecount">52</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-24396083" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-43138494" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">For <code>ssh</code> this only works in absence of <code>~&#47;.ssh&#47;config</code> which rewrites the hostname or alias.</span>
+                    &ndash;&nbsp;<a href="/users/490291/tino"
+                       title="1,732 reputation"
+                       class="comment-user">Tino</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-07 09:33:54Z" class="relativetime-clean">Dec 7 '14 at 9:33</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-24396083" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="16113273"></a>
+<div id="answer-16113273" class="answer" data-answerid="16113273"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="16113273">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The upstream's remote may not be called "origin" so here's a variation:</p>
+
+<pre><code>remote=$(git config --get branch.master.remote)
+url=$(git config --get remote.$remote.url)
+basename=$(basename "$url" .git)
+echo $basename
+</code></pre>
+
+<p>or:</p>
+
+<pre><code>basename $(git config --get remote.$(git config --get branch.master.remote).url) .git
+</code></pre>
+
+<p>for more useful variables there's:</p>
+
+<pre><code>$ git config -l
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/16113273" title="short permalink to this answer" class="short-link" id="link-post-16113273">share</a><span class="lsep">|</span><a href="/posts/16113273/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-04-19 20:49:45Z" class="relativetime">Apr 19 '13 at 20:49</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1357163/cagney"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/1b0eebdd7768a62e2e82a1540315c29b?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1357163/cagney">cagney</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">86</span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16113273" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-16113273" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="33735988"></a>
+<div id="answer-33735988" class="answer" data-answerid="33735988"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="33735988">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>To supplement the other answers:  If the remote has for some reason been changed and so doesn't reflect the <em>original</em> origin, the very first entry in the reflog (i.e. the last entry displayed by the command <code>git reflog</code>) should indicate where the repo was originally cloned from.</p>
+
+<p>e.g.</p>
+
+<pre><code>$ git reflog | tail -n 1
+f34be46 HEAD@{0}: clone: from https://github.com/git/git
+$
+</code></pre>
+
+<p>(Bear in mind that the reflog may be purged, so this isn't guaranteed to work.)</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/33735988" title="short permalink to this answer" class="short-link" id="link-post-33735988">share</a><span class="lsep">|</span><a href="/posts/33735988/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-11-16 12:58:41Z" class="relativetime">Nov 16 '15 at 12:58</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/193887/jeremy"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/54a2fc2a8cb81440a442aa45fc0f41a9?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/193887/jeremy">Jeremy</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,144</span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-33735988" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-64386617" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is probably the only real way to get the &quot;original&quot; remote if it has been changed.</span>
+                    &ndash;&nbsp;<a href="/users/496501/justin-ohms"
+                       title="1,711 reputation"
+                       class="comment-user">Justin Ohms</a>
+                <span class="comment-date" dir="ltr"><span title="2016-07-20 23:57:38Z" class="relativetime-clean">Jul 20 '16 at 23:57</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-68494495" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">But it doesn&#39;t show you the URL of the current used remote. To show the actuual used URL, you would need this solution then: <a href="http://stackoverflow.com/a/40630957/1069083">stackoverflow.com/a/40630957/1069083</a></span>
+                    &ndash;&nbsp;<a href="/users/1069083/rubo77"
+                       title="4,876 reputation"
+                       class="comment-user">rubo77</a>
+                <span class="comment-date" dir="ltr"><span title="2016-11-16 11:28:14Z" class="relativetime-clean">Nov 16 '16 at 11:28</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-33735988" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="33841426"></a>
+<div id="answer-33841426" class="answer" data-answerid="33841426"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="33841426">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>with 
+git remote show origin
+you have to be in the projects directory.
+But if you want to determine the URLs from anywhere else
+you could use
+cat /.git/config | grep url</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/33841426" title="short permalink to this answer" class="short-link" id="link-post-33841426">share</a><span class="lsep">|</span><a href="/posts/33841426/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2015-11-21 08:41:13Z" class="relativetime">Nov 21 '15 at 8:41</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/474985/sedat-kilinc"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/cWqS2.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/474985/sedat-kilinc">Sedat Kilinc</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,649</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="13 bronze badges"><span class="badge3"></span><span class="badgecount">13</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-33841426" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-33841426" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="/users/1210059/tats-innit">Tats_innit</a> <span dir="ltr"><span title="2013-09-06 01:17:55Z" class="relativetime">Sep 6 '13 at 1:17</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="/help/whats-reputation">reputation</a> on this site (the <a href="/help/privileges/new-user">association bonus does not count</a>).
+<br /><br />
+Would you like to answer one of these <a href="/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/git" class="post-tag" title="show questions tagged &#39;git&#39;" rel="tag">git</a> <a href="/questions/tagged/github" class="post-tag" title="show questions tagged &#39;github&#39;" rel="tag"><img src="//i.stack.imgur.com/eoNf5.png" height="16" width="18" alt="" class="sponsor-tag-img">github</a> <a href="/questions/tagged/git-remote" class="post-tag" title="show questions tagged &#39;git-remote&#39;" rel="tag">git-remote</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2010-11-03 16:47:46Z"><b>6 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>931433 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2016-07-23 09:47:16Z">6 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr />
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://stackoverflow.blog/2017/01/Stack-Overflow-Podcast-100-Jeff-Atwood-Is-Back-For-Today/" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://stackoverflow.blog/2017/01/Stack-Overflow-Podcast-100-Jeff-Atwood-Is-Back-For-Today/" class="question-hyperlink">Stack Overflow Podcast #100 - Jeff Atwood Is Back! (For Today)</a>
+                </div>
+                <br class="cbt" />
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk518319054",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk518319054"></div>
+            <div id="hireme"></div>
+        <script>
+window.clcfl_request = 'AgcVnttRSdQIAAAAAFZmPgACAAAAAgAAAAAXAAAAfGdpdHxnaXRodWJ8Z2l0LXJlbW90ZXwAwkpcGLylZ1Gr0g';
+;(function(n){var t,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;t=window;t.clc=t.clc||{};r=t.clc_request||t.clcfl_request;r||console.warn("clc_request missing");t.clc.init=t.clc.init||[];t.clc.init.push(function(n){return n.load()});t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(u){console.error("[clc] Error in loader:",u)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"//clc.stackoverflow.com/markup.js","lib":"//cdn.sstatic.net/clc/clc.min.js?v=1492847a8483"});        </script>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="/q/38918108" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/38918108/how-can-i-know-the-location-from-where-i-cloned-my-git-repository?noredirect=1" class="question-hyperlink">How can I know the location from where I cloned my git repository</a>
+</div>
+<div class="spacer">
+	<a href="/q/171550" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  large">332</div>
+	</a>
+	<a href="/questions/171550/find-out-which-remote-branch-a-local-branch-is-tracking?noredirect=1" class="question-hyperlink">Find out which remote branch a local branch is tracking</a>
+</div>
+<div class="spacer">
+	<a href="/q/8816107" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">73</div>
+	</a>
+	<a href="/questions/8816107/how-can-i-retrieve-the-remote-git-address-of-a-repo?noredirect=1" class="question-hyperlink">How can I retrieve the remote git address of a repo?</a>
+</div>
+<div class="spacer">
+	<a href="/q/18388840" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">3</div>
+	</a>
+	<a href="/questions/18388840/get-git-repo-url-using-absolute-path?noredirect=1" class="question-hyperlink">Get Git repo url using absolute path</a>
+</div>
+<div class="spacer">
+	<a href="/q/16452415" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">2</div>
+	</a>
+	<a href="/questions/16452415/how-to-find-a-url-for-a-local-git-repo?noredirect=1" class="question-hyperlink">How to find a url for a local GIT repo</a>
+</div>
+<div class="spacer">
+	<a href="/q/16017487" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="/questions/16017487/how-can-i-determine-the-url-of-a-git-server-inside-of-a-git-project?noredirect=1" class="question-hyperlink">How can I determine the url of a git server, inside of a git project?</a>
+</div>
+<div class="spacer">
+	<a href="/q/24384531" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/24384531/locate-visual-studio-team-services-url-in-visual-studio-solution?noredirect=1" class="question-hyperlink">Locate Visual Studio Team Services url in visual studio solution</a>
+</div>
+<div class="spacer">
+	<a href="/q/38134304" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/38134304/git-push-fails-with-public-key-when-using-ssh-and-specifying-credentials?noredirect=1" class="question-hyperlink">Git push fails with public key when using SSH and specifying credentials</a>
+</div>
+<div class="spacer">
+	<a href="/q/25740677" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/25740677/retrieve-all-clone-urls-for-git-repository-from-command-line?noredirect=1" class="question-hyperlink">Retrieve all clone URLs for git repository from command line</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer"><a href="/q/61212" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">4220</div></a><a href="/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-branch" class="question-hyperlink">How to remove local (untracked) files from the current Git branch?</a></div><div class="spacer"><a href="/q/67699" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2974</div></a><a href="/questions/67699/how-to-clone-all-remote-branches-in-git" class="question-hyperlink">How to clone all remote branches in Git?</a></div><div class="spacer"><a href="/q/115983" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2709</div></a><a href="/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository" class="question-hyperlink">How can I add an empty directory to a Git repository?</a></div><div class="spacer"><a href="/q/1221840" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">299</div></a><a href="/questions/1221840/remote-origin-already-exists-on-git-push-to-a-new-repository" class="question-hyperlink">Remote origin already exists on &#39;git push&#39; to a new repository</a></div><div class="spacer"><a href="/q/2003505" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">9425</div></a><a href="/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely" class="question-hyperlink">How to delete a Git branch both locally and remotely?</a></div><div class="spacer"><a href="/q/2432764" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2126</div></a><a href="/questions/2432764/change-the-uri-url-for-a-remote-git-repository" class="question-hyperlink">Change the URI (URL) for a remote Git repository</a></div><div class="spacer"><a href="/q/2765421" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2596</div></a><a href="/questions/2765421/how-to-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too" class="question-hyperlink">How to push a new local branch to a remote Git repository and track it too?</a></div><div class="spacer"><a href="/q/4114095" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">4222</div></a><a href="/questions/4114095/how-to-revert-git-repository-to-a-previous-commit" class="question-hyperlink">How to revert Git repository to a previous commit?</a></div><div class="spacer"><a href="/q/6591213" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">4700</div></a><a href="/questions/6591213/how-to-rename-a-local-git-branch" class="question-hyperlink">How to rename a local Git branch?</a></div><div class="spacer"><a href="/q/7244321" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2034</div></a><a href="/questions/7244321/how-do-i-update-a-github-forked-repository" class="question-hyperlink">How do I update a GitHub forked repository?</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-salesforce" title="Salesforce Stack Exchange"></div><a href="http://salesforce.stackexchange.com/questions/158162/soql-query-opportunities-rest-api" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:459 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    SOQL Query Opportunities REST API
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/370962/what-do-you-call-this-viewpoint-or-position" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What do you call this viewpoint or position?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/93983/how-does-one-treat-dungeon-worlds-princess-class-move-unicorn" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How does one treat Dungeon World&#39;s Princess class move: Unicorn?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/48622/just-two-cryptic-clues" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Just two cryptic clues?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/84059/how-to-respond-to-a-professor-who-thinks-i-insulted-them-by-pointing-to-and-exp" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to respond to a professor who thinks I insulted them by pointing to, and expressing surprise at &quot;mistakes&quot; in the exercise?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/370966/what-type-of-humor-would-racist-and-sexist-jokes-be-categorized-into" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What type of humor would racist and sexist jokes be categorized into?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/117725/what-can-ride-straight-possibly-mean-in-this" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What can &quot;ride straight&quot; possibly mean in this?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/151448/aliens-in-black" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Aliens In Black?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/877992/how-to-put-executable-to-usr-local-bin" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to put executable to /usr/local/bin?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/341201/key-passphrases-and-sshd-cached-authentication" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Key passphrases and sshd -- cached authentication?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/151503/why-does-one-at-at-have-a-hole-in-it-in-rogue-one" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why does one AT-AT have a hole in it in &quot;Rogue One&quot;?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="http://codereview.stackexchange.com/questions/153979/create-a-function-with-an-undetermined-number-of-successive-calls" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Create a function with an undetermined number of successive calls
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-politics" title="Politics Stack Exchange"></div><a href="http://politics.stackexchange.com/questions/14985/trumps-temporary-ban-and-green-card-holders" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:475 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Trump&#39;s temporary ban and green card holders
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/48619/is-progress-possible-by-a-duo-in-an-infinite-maze" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is progress possible by a duo in an infinite maze?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/41937224/how-does-foreachchar-c-in-n-work" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How does foreach(char c in n--+&quot;&quot;) work?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-german" title="German Language Stack Exchange"></div><a href="http://german.stackexchange.com/questions/34610/word-order-with-leider-followed-by-modal-verb" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:253 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Word order with Leider followed by modal verb
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/84143/drawbacks-of-participating-in-a-conference-boycott" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Drawbacks of participating in a conference boycott
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2120922/area-of-rectangle-in-which-circle-is-inscribed" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Area of rectangle in which circle is inscribed
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/69636/do-all-devices-go-out-at-the-same-time-in-an-emp-attack" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do all devices go out at the same time in an EMP attack?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-music" title="Music: Practice &amp; Theory Stack Exchange"></div><a href="http://music.stackexchange.com/questions/52796/how-to-notate-a-change-to-triplet-feel-part-way-through-a-song" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:240 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to notate a change to triplet feel part-way through a song?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/149852/how-legitimate-wifi-hotspots-redirect-https-requests" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How Legitimate Wifi Hotspots redirect https requests
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/69576/practicality-of-a-thorium-powered-superheated-steam-car" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Practicality of a thorium-powered, superheated-steam car?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/108634/enthusiastically-russianify-a-string" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Enthusiastically Russianify a String
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/260854/a-roadmap-to-hairers-theory-for-taming-infinities" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A roadmap to Hairer&#39;s theory for taming infinities
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/4089430" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/4089430/ivc/422e');});
+</script>
+<noscript>
+    <div><img src="/posts/4089430/ivc/422e" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="http://stackoverflow.blog?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+                        <a href="http://stackoverflow.com/jobs/directory/developer-jobs">developer jobs directory</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="//softwareengineering.stackexchange.com" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                        <li><a href="//crypto.stackexchange.com" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//codereview.stackexchange.com" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="//magento.stackexchange.com" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="//dsp.stackexchange.com" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="//raspberrypi.stackexchange.com" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="//codegolf.stackexchange.com" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//music.stackexchange.com" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//ell.stackexchange.com" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="//japanese.stackexchange.com" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="//anime.stackexchange.com" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="//mechanics.stackexchange.com" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="//cs.stackexchange.com" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="//philosophy.stackexchange.com" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo &#169; 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.1.30.24857
+            </div>
+                </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('git,github,git-remote');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|git|github|git-remote|');
+                ga('pageData.set', 'dimension2', '|git|github|git-remote|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    </body>
+</html>
